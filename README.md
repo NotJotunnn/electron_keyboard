@@ -16,8 +16,10 @@ Hope you'll enjoy it!
 
 # Attention!
 
-The process should take some minutes to set up, but at the end, you should end up with a nice little app that generates very diverse passwords!
+The process should take some minutes to set up, but at the end, you should end up with a 24 keys piano!
 
 It works from the tray so whenever you run it, make sure to pay attention to it!
 
-P.S.: Fixed the dark icon!
+Last little thing, whenever using it with the mouse, so "rebound" the keys, just press tab while inside the tab.
+
+P.S.: No more dark stroke-only icons!

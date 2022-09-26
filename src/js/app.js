@@ -228,3 +228,13 @@ piano.addEventListener("keydown", e => {
     }
 
 });
+
+const check = document.querySelector("#studymode");
+
+check.addEventListener("click", () => {
+    const div = document.querySelectorAll("#key__div");
+
+    for(i = 0; i <= div.length-1; i++){
+        div[i].classList.toggle("unactive")
+    }
+})

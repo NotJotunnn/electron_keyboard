@@ -6,7 +6,7 @@ iconPath = resolve(__dirname, '../', 'assets', 'favicon-32x32.png')
 
 function createWindow() {
     const win = new BrowserWindow({
-        width: 1100,
+        width: 1200,
         height: 400,
         show: false,
         frame: false,
@@ -14,6 +14,9 @@ function createWindow() {
     });
 
     win.loadFile(join(__dirname, "../pages/index.html"));
+        
+    // win.webContents.openDevTools();
+
 
     const tray = new Tray(iconPath)
     tray.setToolTip('The next Beethoven')

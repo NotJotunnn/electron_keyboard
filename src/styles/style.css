@@ -41,6 +41,7 @@ body {
     position: absolute;
 
     background-color: #000;
+    color: #fff;
     transition: background ease-in-out 2s, border ease-in-out 2s;
 }
 
@@ -49,6 +50,7 @@ body {
     height: 280px;
 
     background-color: #fff;
+    color: #000;
 
     border-radius: 0 0 5px 5px;
     border: 2px solid #000;
@@ -69,7 +71,7 @@ body {
     right: 44%;
 }
 
-input {
+input[type="text"] {
     width: 0;
     opacity: 0;
 }
@@ -77,6 +79,7 @@ input {
 .active {
     background-color: yellow;
     border: yellowgreen 2px solid;
+    color: #000;
     transition: background ease-in-out .05s, border ease-in-out .05s;
 }
 
@@ -119,4 +122,32 @@ input {
 
 .key:nth-child(23) {
   left: 865px;
+}
+
+.note__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  /* border: 2px solid red; */
+}
+
+span {
+  position: absolute;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  margin-right: 15px;
+}
+
+.unactive {
+  opacity: 0;
 }
