@@ -16,7 +16,7 @@ pianoKeys.forEach((pianoKeys, i) => {
 
 function playNote(url) {
     const number = url < 9 ? '0' + (url + 1) : (url + 1);
-    const newUrl = `../pianokeys/key${number}.mp3`;
+    const newUrl = `../pianokeys__modified/key${number}__modified.mp3`;
     playSound(newUrl)
 }
 

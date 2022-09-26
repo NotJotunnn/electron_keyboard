@@ -20,6 +20,6 @@ The process should take some minutes to set up, but at the end, you should end u
 
 It works from the tray so whenever you run it, make sure to pay attention to it!
 
-Last little thing, whenever using it with the mouse, so "rebound" the keys, just press tab while inside the tab.
+Last little thing, whenever using it with the mouse, to "rebound" the keyboard, just press tab while inside the window.
 
 P.S.: No more dark stroke-only icons!
