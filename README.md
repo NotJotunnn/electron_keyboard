@@ -16,6 +16,8 @@ Hope you'll enjoy it!
 
 # Attention!
 
+For now this app has compatibility issues with any platform that isn't mac or linux.
+
 The process should take some minutes to set up, but at the end, you should end up with a 24 keys piano!
 
 It works from the tray so whenever you run it, make sure to pay attention to it!
