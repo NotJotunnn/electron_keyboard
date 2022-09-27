@@ -1,5 +1,5 @@
 {
-  "name": "eletric_keyboard",
+  "name": "The Eletric Keyboard",
   "private": true,
   "version": "0.0.0",
   "main": "./src/electron/main.js",
