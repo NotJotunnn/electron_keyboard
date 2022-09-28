@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <link rel="stylesheet" href="../styles/style.css">
     <script src="../js/app.js" defer></script>
     <title>Electron Keyboard</title>
@@ -13,7 +14,7 @@
         <h1 class="noselect">Ol' reliable</h1>
         <label class="label"><p class="noselect">Learning mode</p>
           <label class="toggle" for="myToggle">
-              <input tabindex="1" class="toggle__input" type="checkbox" id="myToggle">
+              <input class="toggle__input" type="checkbox" id="myToggle">
               <div class="toggle__fill"></div>
           </label></label>
       </div>

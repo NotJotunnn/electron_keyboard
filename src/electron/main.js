@@ -15,6 +15,9 @@ function createWindow() {
 
     win.loadFile(join(__dirname, "../pages/index.html"));
 
+    // win.webContents.openDevTools();
+
+
     const tray = new Tray(iconPath)
     tray.setToolTip('The next Beethoven')
 

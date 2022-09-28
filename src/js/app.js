@@ -1,5 +1,9 @@
 const pianoKeys = document.querySelectorAll(".key");
 
+const div = document.querySelectorAll("#key__div");
+
+const check = document.querySelector("#myToggle");
+
 function playSound(newUrl) {
     const sound = new Audio(newUrl);
     sound.play()
@@ -17,7 +21,7 @@ pianoKeys.forEach((pianoKeys, i) => {
 
 function playNote(url) {
     const number = url < 9 ? '0' + (url + 1) : (url + 1);
-    const newUrl = `../pianokeys/key${number}.mp3`;
+    const newUrl = `../pianokeys/key${number}.wav`;
     playSound(newUrl)
 }
 
@@ -35,6 +39,11 @@ document.addEventListener("keydown", e => {
     if (!e.repeat){
         const value = {"number": 0}
         switch (e.code) {
+            case 'Tab':                       
+                for(i = 0; i <= div.length-1; i++){
+                    div[i].classList.toggle("unactive")
+                }
+                break
             case 'KeyQ':
                 value.number = 0
                 addCss(value.number)
@@ -163,80 +172,77 @@ document.addEventListener("keydown", e => {
                 }, 1100)
                 playNote(value.number)
                 break
-            case 'KeyO':
-                value.number = 16
-                addCss(value.number)
-                setTimeout(function () {
-                    turnOffCss(value.number)
-                }, 1100)
-                playNote(value.number)
-                break
-            case 'KeyL':
-                value.number = 17
-                addCss(value.number)
-                setTimeout(function () {
-                    turnOffCss(value.number)
-                }, 1100)
-                playNote(value.number)
-                break
-            case 'KeyP':
-                value.number = 18
-                addCss(value.number)
-                setTimeout(function () {
-                    turnOffCss(value.number)
-                }, 1100)
-                playNote(value.number)
-                break
-            case 'Semicolon':
-                value.number = 19
-                addCss(value.number)
-                setTimeout(function () {
-                    turnOffCss(value.number)
-                }, 1100)
-                playNote(value.number)
-                break
-            case 'BracketLeft':
-                value.number = 20
-                addCss(value.number)
-                setTimeout(function () {
-                    turnOffCss(value.number)
-                }, 1100)
-                playNote(value.number)
-                break
-            case 'Equal':
-                value.number = 21
-                addCss(value.number)
-                setTimeout(function () {
-                    turnOffCss(value.number)
-                }, 1100)
-                playNote(value.number)
-                break
-            case 'BracketRight':
-                value.number = 22
-                addCss(value.number)
-                setTimeout(function () {
-                    turnOffCss(value.number)
-                }, 1100)
-                playNote(value.number)
-                break
-            case 'Backslash':
-                value.number = 23
-                addCss(value.number)
-                setTimeout(function () {
-                    turnOffCss(value.number)
-                }, 1100)
-                playNote(value.number)
-                break
-        }
-    }
-
-});
-
-const check = document.querySelector("#myToggle");
-
+                case 'KeyO':
+                    value.number = 16
+                    addCss(value.number)
+                    setTimeout(function () {
+                        turnOffCss(value.number)
+                    }, 1100)
+                    playNote(value.number)
+                    break
+                    case 'KeyL':
+                        value.number = 17
+                        addCss(value.number)
+                        setTimeout(function () {
+                            turnOffCss(value.number)
+                        }, 1100)
+                        playNote(value.number)
+                        break
+                        case 'KeyP':
+                            value.number = 18
+                            addCss(value.number)
+                            setTimeout(function () {
+                                turnOffCss(value.number)
+                            }, 1100)
+                            playNote(value.number)
+                            break
+                            case 'Semicolon':
+                                value.number = 19
+                                addCss(value.number)
+                                setTimeout(function () {
+                                    turnOffCss(value.number)
+                                }, 1100)
+                                playNote(value.number)
+                                break
+                                case 'BracketLeft':
+                                    value.number = 20
+                                    addCss(value.number)
+                                    setTimeout(function () {
+                                        turnOffCss(value.number)
+                                    }, 1100)
+                                    playNote(value.number)
+                                    break
+                                    case 'Equal':
+                                        value.number = 21
+                                        addCss(value.number)
+                                        setTimeout(function () {
+                                            turnOffCss(value.number)
+                                        }, 1100)
+                                        playNote(value.number)
+                                        break
+                                        case 'BracketRight':
+                                            value.number = 22
+                                            addCss(value.number)
+                                            setTimeout(function () {
+                                                turnOffCss(value.number)
+                                            }, 1100)
+                                            playNote(value.number)
+                                            break
+                                            case 'Backslash':
+                                                value.number = 23
+                                                addCss(value.number)
+                                                setTimeout(function () {
+                                                    turnOffCss(value.number)
+                                                }, 1100)
+                                                playNote(value.number)
+                                                break
+                                            }
+                                        }
+                                        
+                                    });
+                                    
 check.addEventListener("click", () => {
-    const div = document.querySelectorAll("#key__div");
-
+    
     for(i = 0; i <= div.length-1; i++){
         div[i].classList.toggle("unactive")
     }
